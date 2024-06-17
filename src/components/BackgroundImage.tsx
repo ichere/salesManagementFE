@@ -1,27 +1,37 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import backgroundImage from '../assets/images/backgroundImage.png';
 import logo from '../assets/images/logo.png';
+import { HeaderProps } from '../interfaces/pageProps';
+import { COLOURS } from '../constants/colours';
 
-export const BackgroundImage = () => {
+export const BackgroundImage = ({heading, subHeading}: HeaderProps) => {
   return (
     <Flex
-      width={"100%"}
-      height="100%"
+      width={'100%'}
+      height={['100vh', '100%', '100vh']}
       backgroundImage={backgroundImage}
-      borderRadius="20px"
-      justifyContent={"center"}
-      alignItems="center"
+      justifyContent={'center'}
+      backgroundSize={'cover'}
     >
-      <Box textAlign={"center"} height="80%">
-        <Flex width="100%" justify={"center"} mb="10px">
-          <Image
-            width="100px"
-            borderRadius={"20px"}
+      <Box
+        textAlign={['center', 'center', 'left']}
+        color={COLOURS.white}
+        position={'absolute'}
+        bottom={['75%', '75%', '4rem']}
+        p={['2rem', '3rem', '4rem']}
+      >
+        <Image
+            width="50px"
+            borderRadius={"50%"}
             src={logo}
             alt="background"
           />
-        </Flex>
-        <Text fontSize={"20px"}>Easily manage your Sales</Text>
+        <Text fontSize={'2rem'} mb='1rem'>
+            {heading}
+        </Text>
+        <Text fontSize='2.6rem' lineHeight={1.2}>
+            {subHeading}
+        </Text>
       </Box>
     </Flex>
   )
