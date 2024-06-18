@@ -2,13 +2,13 @@ import { Box, Flex, Image } from "@chakra-ui/react"
 import { ReactChildren } from "../interfaces/children"
 import { COLOURS } from "../constants/colours"
 import { BackgroundImage } from "./BackgroundImage"
-import LogoImage from "../assets/images/bookippa-logo.svg"
+import LogoImage from "../assets/images/logo.png"
 
 export const ResponsiveAuthWrapper = ({children, heading, subHeading}: ReactChildren) => {
   return (
     <Flex
         direction={['column', 'column', 'column', 'row']}
-        // background={COLOURS.BGgrey}
+        background={COLOURS.BGgrey}
         width='full'
         minH={['100%', '100%', '100vh']}
         alignItems={'center'}
@@ -37,7 +37,7 @@ export const ResponsiveAuthWrapper = ({children, heading, subHeading}: ReactChil
                 justify='center'
                 pt={['2.5rem', '2.5rem', '0']}
             >
-                <Image src={LogoImage} height={['6rem', '10rem']} width={['6rem', '7rem', '10rem']} />
+                <Image src={LogoImage} height={['6rem', '10rem']} width={['6rem', '7rem', '10rem']} borderRadius={'50%'} />
             </Flex>
             {children}
         </Box>

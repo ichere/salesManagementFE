@@ -48,8 +48,8 @@ export const LoginPage = () => {
   return (
     <ResponsiveAuthWrapper
           heading='Welcome Back'
-          subHeading='Login to your Account' children={undefined}    >
-        {/* <Box width={'100%'} height={'100%'} pb='6rem'>
+          subHeading='Login to your Account'    >
+        <Box width={'100%'} height={'100%'} pb='6rem'>
             <AuthHeader heading='Login to Your Account' />
             <Box mt='1.5rem'>
                 <CustomInputGroup
@@ -114,7 +114,7 @@ export const LoginPage = () => {
                     route={UNAUTHENTICATED_ROUTES.signUp}
                 />
             </Box>
-        </Box> */}
+        </Box>
     </ResponsiveAuthWrapper>
   )
 }

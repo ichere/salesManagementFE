@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
-import backgroundImage from '../assets/images/backgroundImage.svg';
+import backgroundImage from '../assets/images/backgroundImagee.png';
 import { HeaderProps } from '../interfaces/pageProps';
 import { COLOURS } from '../constants/colours';
 
