@@ -1,6 +1,5 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import backgroundImage from '../assets/images/backgroundImage.png';
-import logo from '../assets/images/logo.png';
+import { Box, Flex, Text } from '@chakra-ui/react';
+import backgroundImage from '../assets/images/backgroundImage.svg';
 import { HeaderProps } from '../interfaces/pageProps';
 import { COLOURS } from '../constants/colours';
 
@@ -14,24 +13,18 @@ export const BackgroundImage = ({heading, subHeading}: HeaderProps) => {
       backgroundSize={'cover'}
     >
       <Box
-        textAlign={['center', 'center', 'left']}
-        color={COLOURS.white}
-        position={'absolute'}
-        bottom={['75%', '75%', '4rem']}
-        p={['2rem', '3rem', '4rem']}
+          textAlign={['center', 'center', 'left']}
+          color={COLOURS.white}
+          position={'absolute'}
+          bottom={['75%', '75%', '4rem']}
+          p={['2rem', '3rem', '4rem']}
       >
-        <Image
-            width="50px"
-            borderRadius={"50%"}
-            src={logo}
-            alt="background"
-          />
-        <Text fontSize={'2rem'} mb='1rem'>
-            {heading}
-        </Text>
-        <Text fontSize='2.6rem' lineHeight={1.2}>
-            {subHeading}
-        </Text>
+          <Text color={COLOURS.black} fontSize={'2rem'} mb='1rem'>
+              {heading}
+          </Text>
+          <Text color={COLOURS.black} fontSize='2.6rem' lineHeight={1.2}>
+              {subHeading}
+          </Text>
       </Box>
     </Flex>
   )

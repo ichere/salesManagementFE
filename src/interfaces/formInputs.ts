@@ -1,11 +1,41 @@
+import { HTMLInputTypeAttribute } from "react";
+
 export interface FormControlProps {
-    type: string;
+    variant?: 'outline' | 'filled' | 'flushed' | 'unstyled';
+    type: HTMLInputTypeAttribute;
     placeholder: string;
-    label: string;
+    label?: string;
+    bg?: string;
     name: string;
     value: string | number;
+    color?: string;
+    isInvalid?: boolean;
+    borderColor?: string;
     handleChange: React.ChangeEventHandler;
+    onBlur?: React.FocusEventHandler;
+    onKeyPress?: React.KeyboardEventHandler;
+    onKeyDown?: React.KeyboardEventHandler;
+    onFocus?: React.FocusEventHandler<HTMLInputElement> | undefined;
+    icon?: React.ReactNode;
+    width?: string[];
+    disabled?: boolean;
 }
+
+export type ParentCompProps = {
+    childComp?: React.ReactElement;
+    rightIcon?: React.ReactElement;
+    bg: string;
+    color: string;
+    text: string;
+    fontSize?: string[];
+    loading: boolean;
+    disabled?: boolean;
+    borderColor?: string;
+    h?: string[];
+    w?: string;
+    handleSubmit?: () => void;
+    height?: string;
+};
 
 export interface ChangeInterface {
     name: string;

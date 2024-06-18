@@ -1,36 +1,46 @@
-import React from "react";
-import { Button } from "@chakra-ui/react";
+import { Button } from '@chakra-ui/react';
 
-interface ParentCompProps {
-  childComp?: React.ReactElement;
-  bg: string;
-  color: string;
-  text: string;
-  loading: boolean;
-  handleSubmit: () => void;
-}
+import { COLOURS } from '../constants/colours'; 
+import { ParentCompProps } from '../interfaces/formInputs'; 
 
 export const LargeBtn = ({
   childComp,
+  rightIcon,
   bg,
   color,
   text,
-  handleSubmit,
+  fontSize,
+  h,
+  w,
+  disabled,
+  borderColor,
+  handleSubmit = () => null,
   loading,
-}: ParentCompProps) => {
+  ...rest
+}: ParentCompProps): JSX.Element => {
   return (
     <Button
-      type="submit"
+      type='submit'
       leftIcon={childComp}
-      width="100%"
-      height={"50px"}
+      rightIcon={rightIcon}
+      width={w || '100%'}
+      height={h || ['3rem', '3rem', '4rem']}
       color={color}
       bg={bg}
-      borderRadius={"10px"}
-      border={"1px solid btnblue"}
-      fontSize="20px"
+      borderRadius={'.8rem'}
+      border={
+        borderColor ? `1px solid ${borderColor}` : `1px solid ${COLOURS.blue}`
+      }
+      fontSize={fontSize || ['1.2rem', '1.2rem', '1.4rem']}
+      fontWeight='semibold'
+      _hover={{
+        bg: bg || COLOURS.blue,
+        color,
+      }}
+      isDisabled={disabled}
       onClick={handleSubmit}
       isLoading={loading}
+      {...rest}
     >
       {text}
     </Button>
