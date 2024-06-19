@@ -50,26 +50,26 @@ export const SignUpPage = () => {
           <AuthHeader heading='Sign Up' />
           <Box mt='1.5rem'>
               <CustomInputGroup
-                  placeholder={'Enter your first name'}
-                  type={'text'}
-                  label={'First Name'}
-                  name='firstName'
-                  borderColor={COLOURS.blue}
-                  // icon={<MdOutlineAlternateEmail />}
-                  handleChange={handleChange}
-                  onBlur={() => handleBlur('firstName')}
-                  value={formValues.firstName}
-                  isInvalid={
-                      formErrors.firstName
-                          ? touchedFields.includes('firstName')
-                          : undefined
-                  }
+                placeholder={'Enter your first name'}
+                type={'text'}
+                label={'First Name'}
+                name='firstName'
+                borderColor={COLOURS.blue}
+                icon={<MdOutlineAlternateEmail />}
+                handleChange={handleChange}
+                onBlur={() => handleBlur('firstName')}
+                value={formValues.firstName}
+                isInvalid={
+                  formErrors.firstName
+                  ? touchedFields.includes('firstName')
+                  : undefined
+                }
               />
               {formErrors.firstName &&
                   touchedFields.includes('firstName') && (
-                      <Text color={COLOURS.red} fontSize='1.4rem'>
-                          {formErrors.firstName}
-                      </Text>
+                    <Text color={COLOURS.red} fontSize='1.4rem'>
+                        {formErrors.firstName}
+                    </Text>
                   )}
           </Box>
 
