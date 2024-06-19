@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 
 export enum PageTitle {
-    Home = 'Project | Home',
-    Register = 'Project | Sign Up',
-    Login = 'Project | Login',
-    ForgotPassword = 'Project | Forgot Password',
-    Password_Reset = 'Project | Reset Password',
-    Reset_Successful = 'Project | Reset Successful',
-    VerifyEmail = 'Project | Email Verification',
-    Profile = 'Project | Profile'
+    Home = 'Salesxy | Home Page',
+    Register = 'Salesxy | Sign Up',
+    Login = 'Salesxy | Login',
+    ForgotPassword = 'Salesxy | Forgot Password',
+    Password_Reset = 'Salesxy | Reset Password',
+    Reset_Successful = 'Salesxy | Reset Successful',
+    VerifyEmail = 'Salesxy | Email Verification',
 }
 
 export const useDocumentTitle = (
