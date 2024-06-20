@@ -1,4 +1,3 @@
-import React from 'react'
 import { ResponsiveAuthWrapper } from '../components/ResponsiveAuthWrapper'
 import { Box, Text } from '@chakra-ui/react'
 import { AuthHeader } from '../components/AuthHeader'

@@ -37,6 +37,13 @@ export type ParentCompProps = {
     height?: string;
 };
 
+export interface SearchProps {
+    placeholder: string;
+    bg?: string;
+    color?: string;
+    handleSearch: React.ChangeEventHandler;
+}
+
 export interface ChangeInterface {
     name: string;
     value: string;
