@@ -10,13 +10,13 @@ import { SalesTableRow } from '../components/sales/SalesTableRow';
 export const SalesPage = () => {
     useDocumentTitle(PageTitle.Sales);
   return (
-    <PageWrapper heading={"Welcome to your Profile"} subHeading={"profiles"}>
+    <PageWrapper heading={"Welcome to your Sales Book"} subHeading={"Sales"}>
         <PageHeader
-          header="Profiles"
+          header="Sales"
           loading={false}
           btn={true}
-          text="Create Profile"
-          modalHeader="Add Profile"
+          text="Record Sales"
+          modalHeader="Add Sales"
           size="4xl"
           childComp={
             window.innerWidth >= TAB_BREAKPOINT ? (

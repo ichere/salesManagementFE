@@ -11,7 +11,7 @@ export const SalesTableHead = () => {
       align="center"
       justify="space-between"
       textAlign="left"
-      bgColor="#333436"
+      bgColor=""
       borderRadius="md"
       boxShadow="md"
     >

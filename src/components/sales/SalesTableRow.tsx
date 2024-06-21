@@ -12,7 +12,7 @@ export const SalesTableRow = () => {
     const tableBg = useColorModeValue(COLOURS.white, COLOURS.tableDark);
     const appTextColor = useColorModeValue(COLOURS.darkGrey, COLOURS.ivory);
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
-    const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+    const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
 
   const handleDelete = () => {
     // Your delete logic here
@@ -84,23 +84,23 @@ export const SalesTableRow = () => {
         >
           <IconButton
             icon={<EditIcon />}
-            aria-label="Edit Profile"
+            aria-label="Edit Sale"
             size="m"
-            onClick={() => setIsProfileModalOpen(true)}
+            onClick={() => setIsSalesModalOpen(true)}
           ></IconButton>
           <SalesModal
-            isOpen={isProfileModalOpen}
-            onClose={() => setIsProfileModalOpen(false)}
+            isOpen={isSalesModalOpen}
+            onClose={() => setIsSalesModalOpen(false)}
             isEditing={false}
           />
 
           <IconButton
             icon={<DeleteIcon />}
-            aria-label="Edit Profile"
+            aria-label="Edit Sale"
             size="m"
             onClick={() => setIsDeleteModalOpen(true)}
           >
-            Delete Profile
+            Delete Sale
           </IconButton>
           <DeleteModal
             isOpen={isDeleteModalOpen}
