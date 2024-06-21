@@ -15,6 +15,7 @@ import { PasswordResetPage } from './pages/PasswordResetPage';
 import { VerifyEmail } from './pages/VerifyEmail';
 import { ResetSuccessPage } from './pages/ResetSuccessPage';
 import { HomePage } from './pages/HomePage';
+import { SalesPage } from './pages/SalesPage';
 
 const { ToastContainer } = createStandaloneToast();
 
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: '/home',
     element: <HomePage />
+  },
+  {
+    path: '/sales',
+    element: <SalesPage />
   },
   
 ]);

@@ -8,6 +8,7 @@ export enum PageTitle {
     Password_Reset = 'Salesxy | Reset Password',
     Reset_Successful = 'Salesxy | Reset Successful',
     VerifyEmail = 'Salesxy | Email Verification',
+    Sales = 'Salesxy | Sales Page',
 }
 
 export const useDocumentTitle = (

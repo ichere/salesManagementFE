@@ -11,4 +11,5 @@ export const COLOURS = {
     headingGrey: '#18181B',
     darkGrey: '#18181B',
     lightGrey: '#D4D4D8',
+    tableDark: '#333436',
 };
