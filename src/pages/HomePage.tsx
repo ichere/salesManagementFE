@@ -4,6 +4,7 @@ import send from '../assets/images/send.png'
 import markIcon from '../assets/images/mark.png'
 import { PageTitle, useDocumentTitle } from '../utils/pageTitle'
 import { SalesSection } from '../components/sales/SalesSection'
+import { SaleSection } from '../components/sales/SaleSection'
 
 export const HomePage = () => {
     useDocumentTitle(PageTitle.Home);
@@ -39,6 +40,7 @@ export const HomePage = () => {
             </Flex>
         </Box>
         <SalesSection />
+        <SaleSection />
     </>
   )
 }

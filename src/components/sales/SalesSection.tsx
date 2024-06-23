@@ -1,7 +1,6 @@
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react"
 import { COLOURS } from "../../constants/colours"
 import { LANDING_SUB_HEADER_FONT } from "../../constants/appConstants"
-import { LandingPageData, landingPageData } from "../../data/landingPage"
 
 
 export const SalesSection = () => {
@@ -58,38 +57,6 @@ export const SalesSection = () => {
                 </CardFooter>
             </Card>
         </SimpleGrid>
-        <Flex justify={'space-between'} direction={['column', 'column', 'row']} w="100%">
-            <Box w={['100%', '100%', '47%']}>
-                {[...Array(1).fill(landingPageData[3])].map((data: LandingPageData, i: number) => (
-                    <>
-                        <h2>
-                            <Card key={i}>
-                            <CardBody>
-                                <Text>{data.date}</Text>
-                                <Text>{data.description}</Text>
-                                <Text>{data.total}</Text>
-                            </CardBody>
-                            </Card>
-                        </h2>  
-                    </>
-                ))}
-            </Box>
-            <Box w={['100%', '100%', '47%']}>
-                {[...Array(1).fill(landingPageData[4])].map((data: LandingPageData, i: number) => (
-                    <>
-                        <h2>
-                            <Card key={i}>
-                            <CardBody>
-                                <Text>{data.date}</Text>
-                                <Text>{data.description}</Text>
-                                <Text>{data.total}</Text>
-                            </CardBody>
-                            </Card>
-                        </h2>  
-                    </>
-                ))}
-            </Box>
-        </Flex>
         
     </Box>
   )
