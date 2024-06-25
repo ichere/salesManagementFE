@@ -1,7 +1,7 @@
-import React from 'react'
+import { Box } from '@chakra-ui/react'
 
 export const ProductuctTableRow = () => {
   return (
-    <div>ProductuctTableRow</div>
+    <Box>ProductuctTableRow</Box>
   )
 }
