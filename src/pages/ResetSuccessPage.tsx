@@ -14,7 +14,7 @@ export const ResetSuccessPage = () => {
         setLoading(false);
     };
   return (
-    <ResponsiveAuthWrapper heading={'Create, Track, Manage'} subHeading={'Password changed sucessfully!'}>
+    <ResponsiveAuthWrapper heading={'Sell, Record, Manage'} subHeading={'Password changed sucessfully!'}>
       <Box width={'100%'}>
         <AuthHeader heading="Forgot Password" />
         <Flex

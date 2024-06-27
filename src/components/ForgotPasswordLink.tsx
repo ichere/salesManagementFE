@@ -13,7 +13,7 @@ const ForgotPasswordLink = (): JSX.Element => {
             cursor={'pointer'}
             fontSize={'1.5rem'}
         >
-            <Link to={UNAUTHENTICATED_ROUTES.resetPassword}>
+            <Link to={UNAUTHENTICATED_ROUTES.forgotPassword}>
                 Forgot Password?
             </Link>
         </Flex>
