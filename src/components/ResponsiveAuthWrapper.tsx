@@ -17,7 +17,7 @@ export const ResponsiveAuthWrapper = ({children, heading, subHeading}: ReactChil
         <Box
             width={['100%', '100%', '50%']}
             h={['30rem', '30rem', '100vh']}
-            display={['block', 'none', 'none']}
+            display={['none', 'none', 'block']}
         >
             <BackgroundImage heading={heading} subHeading={subHeading} />
         </Box>
