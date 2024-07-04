@@ -2,6 +2,7 @@ import { Box, Flex, Card, CardBody, Text, CardHeader, Heading, Stack, StackDivid
 import { LANDING_SUB_HEADER_FONT } from '../../constants/appConstants'
 import { COLOURS } from '../../constants/colours'
 import { landingPageData, LandingPageData } from '../../data/landingPage'
+import { LargeBtn } from '../LargeBtn'
 
 export const SaleSection = () => {
   return (
@@ -38,12 +39,19 @@ export const SaleSection = () => {
                                     <Text pt='2' fontSize='sm'>{data.date}</Text>
                                   </Box>
                                   <Box>
-                                    <Heading size='xs' textTransform='uppercase'>Date of Report</Heading>
+                                    <Heading size='xs' textTransform='uppercase'>Description</Heading>
                                     <Text pt='2' fontSize='sm'>{data.description}</Text>
                                   </Box>
                                   <Box>
-                                    <Heading size='xs' textTransform='uppercase'>Date of Report</Heading>
+                                    <Heading size='xs' textTransform='uppercase'>Total</Heading>
                                     <Text pt='2' fontSize='sm'>{data.total}</Text>
+                                  </Box>
+                                  <Box width={['5rem', '5.5rem', '8rem']}>
+                                    <LargeBtn 
+                                    bg={COLOURS.blue} 
+                                    color={COLOURS.black} 
+                                    text={'View Here'} 
+                                    loading={false} />
                                   </Box>
                                 </Stack>
                               </CardBody>
