@@ -1,4 +1,4 @@
-import { Box, Flex, Card, CardBody, Text } from '@chakra-ui/react'
+import { Box, Flex, Card, CardBody, Text, CardHeader, Heading, Stack, StackDivider } from '@chakra-ui/react'
 import { LANDING_SUB_HEADER_FONT } from '../../constants/appConstants'
 import { COLOURS } from '../../constants/colours'
 import { landingPageData, LandingPageData } from '../../data/landingPage'
@@ -28,11 +28,25 @@ export const SaleSection = () => {
                     <>
                         <h2>
                             <Card key={i}>
-                            <CardBody>
-                                <Text>{data.date}</Text>
-                                <Text>{data.description}</Text>
-                                <Text>{data.total}</Text>
-                            </CardBody>
+                              <CardHeader>
+                                <Heading size='md'> Sales Report </Heading>
+                              </CardHeader>
+                              <CardBody>
+                                <Stack divider={<StackDivider />} spacing='4'>
+                                  <Box>
+                                    <Heading size='xs' textTransform='uppercase'>Date of Report</Heading>
+                                    <Text pt='2' fontSize='sm'>{data.date}</Text>
+                                  </Box>
+                                  <Box>
+                                    <Heading size='xs' textTransform='uppercase'>Date of Report</Heading>
+                                    <Text pt='2' fontSize='sm'>{data.description}</Text>
+                                  </Box>
+                                  <Box>
+                                    <Heading size='xs' textTransform='uppercase'>Date of Report</Heading>
+                                    <Text pt='2' fontSize='sm'>{data.total}</Text>
+                                  </Box>
+                                </Stack>
+                              </CardBody>
                             </Card>
                         </h2>  
                     </>
@@ -43,11 +57,11 @@ export const SaleSection = () => {
                     <>
                         <h2>
                             <Card key={i}>
-                            <CardBody>
-                                <Text>{data.date}</Text>
-                                <Text>{data.description}</Text>
-                                <Text>{data.total}</Text>
-                            </CardBody>
+                              <CardBody>
+                                  <Text>{data.date}</Text>
+                                  <Text>{data.description}</Text>
+                                  <Text>{data.total}</Text>
+                              </CardBody>
                             </Card>
                         </h2>  
                     </>

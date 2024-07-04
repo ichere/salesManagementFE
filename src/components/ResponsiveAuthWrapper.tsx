@@ -2,6 +2,7 @@ import { Box, Flex, Image } from "@chakra-ui/react"
 import { ReactChildren } from "../interfaces/children"
 import { COLOURS } from "../constants/colours"
 import { BackgroundImage } from "./BackgroundImage"
+import { BackgroundImage2 } from "./BackgroundImage2"
 import LogoImage from "../assets/images/logo.png"
 
 export const ResponsiveAuthWrapper = ({children, heading, subHeading}: ReactChildren) => {
@@ -20,6 +21,13 @@ export const ResponsiveAuthWrapper = ({children, heading, subHeading}: ReactChil
             display={['none', 'none', 'block']}
         >
             <BackgroundImage heading={heading} subHeading={subHeading} />
+        </Box>
+        <Box
+            width={['100%', '100%', '50%']}
+            h={['30rem', '30rem', '100vh']}
+            display={['block', 'block', 'none']}
+        >
+            <BackgroundImage2 heading={heading} subHeading={subHeading} />
         </Box>
         <Box
             position='relative'
