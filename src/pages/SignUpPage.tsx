@@ -43,7 +43,7 @@ export const SignUpPage = () => {
   };
   return (
     <ResponsiveAuthWrapper
-      heading='Create, Track, Manage'
+      heading='Sell, Record, Manage'
       subHeading='Create an account and start book keeping'
     >
       <Box width={'100%'} height={'100%'} pb='6rem'>
@@ -144,34 +144,10 @@ export const SignUpPage = () => {
               </Text>
             )}
           </Box>
-          {/* <Box mt='1.5rem'>
-              <CustomInputGroup
-                  placeholder={'Confirm password'}
-                  type={'password'}
-                  label={'Confirm Password'}
-                  name='confirm_password'
-                  borderColor={'primary'}
-                  icon={<AiOutlineLock />}
-                  handleChange={handleChange}
-                  onBlur={() => handleBlur('password')}
-                  value={formValues.confirm_password}
-                  isInvalid={
-                      formErrors.confirm_password
-                          ? touchedFields.includes('password')
-                          : undefined
-                  }
-              />
-              {formErrors.confirm_password &&
-                  touchedFields.includes('password') && (
-                      <Text color={COLORS.red} fontSize='1.4rem'>
-                          {formErrors.confirm_password}
-                      </Text>
-                  )}
-          </Box> */}
           <Box position='relative' mt='3.5rem'>
               <LargeBtn
                   text={'Sign Up'}
-                  bg={'primary'}
+                  bg={COLOURS.blue}
                   color={COLOURS.black}
                   h={['4rem', '4rem', '4.5rem']}
                   handleSubmit={handleSubmit}

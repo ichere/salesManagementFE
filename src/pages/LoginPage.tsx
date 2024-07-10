@@ -102,7 +102,7 @@ export const LoginPage = () => {
             <Box position='relative' mt='3.5rem'>
                 <LargeBtn
                     text={'Log in'}
-                    bg={'primary'}
+                    bg={COLOURS.blue}
                     color={COLOURS.black}
                     h={['4rem', '4rem', '4.5rem']}
                     handleSubmit={handleSubmit}

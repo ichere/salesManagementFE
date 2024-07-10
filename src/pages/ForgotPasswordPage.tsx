@@ -62,7 +62,7 @@ export const ForgotPasswordPage = () => {
                 <Box position='relative' mt='3.5rem'>
                     <LargeBtn
                         text={'Send Link'}
-                        bg={'primary'}
+                        bg={COLOURS.blue}
                         color={COLOURS.black}
                         h={['4rem', '4rem', '4.5rem']}
                         handleSubmit={handleSubmit}

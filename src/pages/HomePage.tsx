@@ -3,7 +3,6 @@ import dayjs from 'dayjs'
 import send from '../assets/images/send.png'
 import markIcon from '../assets/images/mark.png'
 import { PageTitle, useDocumentTitle } from '../utils/pageTitle'
-import { SalesSection } from '../components/sales/SalesSection'
 import { SaleSection } from '../components/sales/SaleSection'
 
 export const HomePage = () => {
@@ -14,7 +13,7 @@ export const HomePage = () => {
             <Flex width="100%" justifyContent={"space-between"}>
             <Box width={"100%"}>
             <Heading as="h2" fontSize={"20px"} mb="5px">
-                Welcome, Monica
+                Welcome, Chere
             </Heading>
             <Text fontSize={"50px"} fontWeight="semibold">
                 {dayjs().format("hh:mm A")}
@@ -39,7 +38,6 @@ export const HomePage = () => {
             </Flex>
             </Flex>
         </Box>
-        <SalesSection />
         <SaleSection />
     </>
   )
